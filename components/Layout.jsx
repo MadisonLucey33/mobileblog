@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => (
   <>
-   <svg className="-mt-40 min-w-full content-center container mx-auto object-cover w-max sm:min-h-fit  sm:object-cover sm:object-bottom sm:w-max md:w-max 2xl:object-right 3xl:w-1/12  lg:overflow-y-scroll lg:container lg:mx-auto lg:px-0 lg:mb-0  lg:pb-5" width="100%" height="900" viewBox="0 0 1200 600" preserveAspectRatio="none"  style={{display:'block', transform: "rotate(180deg)", }}><path d="M 0,150 C 400,0 800,400 1200,150 L 1200,600 L 0,600 Z" fill="hsl(225deg, 15%, 15%)"></path></svg>
+   <svg className="-mt-40 min-w-full min-w-[75%] content-center container mx-auto object-cover w-max sm:min-h-fit  sm:object-cover sm:object-bottom sm:w-max md:w-max 2xl:object-right 3xl:w-1/12  lg:overflow-y-scroll lg:container lg:mx-auto lg:px-0 lg:mb-0  lg:pb-5" width="100%" height="900" viewBox="0 0 1200 600" preserveAspectRatio="none"  style={{display:'block', transform: "rotate(180deg)", }}><path d="M 0,150 C 400,0 800,400 1200,150 L 1200,600 L 0,600 Z" fill="hsl(225deg, 15%, 15%)"></path></svg>
     <Header />
     {children}
     {/* <svg width="100%" height="200" viewBox="0 0 1200 600" preserveAspectRatio="none" style={{display:'block'}}><path d="M 0,150 C 400,0 800,400 1200,150 L 1200,600 L 0,600 Z" fill="hsl(225deg, 15%, 15%)"></path></svg>
