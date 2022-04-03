@@ -74,7 +74,7 @@ const myStyle4 = {
 
   return (
   <div className="z-5 " style={{marginTop: '-50rem'}}>
-    <div className="container mx-auto px-10 mb-0  pb-5 sm:px-0 sm:mx-0" >
+    <div className="container mx-auto px-10 mb-0  pb-5 " >
       {/* <svg width="100%" height="600" viewBox="0 0 1200 600" preserveAspectRatio="none" style={{display:'block'}}><path d="M 0,150 C 400,0 800,400 1200,150 L 1200,600 L 0,600 Z" fill="hsl(225deg, 15%, 15%)"></path></svg> */}
       
       <div className="border-b w-full inline-block border-gray-500 py-8 z-0">
