@@ -11,19 +11,14 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
-        
         </Head>
-
-        {/* min-w-[50%] object-left -mr-96 overflow-x-hidden   */}
         <body className=" 
-        min-w-[50%] object-left overflow-x-hidden
+        min-w-[50%] object-left -mr-96 overflow-x-hidden  
         
-        mx-auto px-0 mb-0  pb-5 min-w-full
-
         sm:overflow-y-scroll sm:container sm:mx-auto sm:px-0 sm:mb-0  sm:pb-5 sm:min-w-full
         md:overflow-y-scroll md:container md:mx-auto md:px-0 md:mb-0  md:pb-5 md:min-w-full
         lg:overflow-y-scroll lg:container lg:mx-auto lg:px-0 lg:mb-0  lg:pb-5 lg:min-w-full
-
+        
         2xl:object-right 
         3xl:w-1/12  
         
