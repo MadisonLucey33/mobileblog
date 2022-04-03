@@ -20,16 +20,17 @@ module.exports = {
      
     },
   },
-  variants: {
-    extend: {},
+  variants: {     // default    small           medium          large           xl                2xl               3xl             4xl             
+    extend: {}, // bg-white sm:bg-red-600 md:bg-gray-600 lg:bg-yellow-300 xl:bg-green-500 2xl:bg-cyan-400 3xl:bg-indigo-600 4xl:bg-violet-800">
     screens: {
-      'sm': '640px',  // maybe phone idk idk
-      'md': '768px', //tablet
-      'lg': '1024px', // different sized laptop bad view
-      'xl': '1280px', // adjusts the coder monitor I THINK THIS WoRKS
-      '2xl': '1440px', // adjusts the regular monitor viewsonic //large laptop   I THINK IT WORKS
-      '3xl': '1536px',  // I THINK IT WORKS
-      '4xl': '1760px', // regular monitor?  I THINK IT WORkS
+                        // PINK     phone
+      'sm': '640px',    // RED                                   
+      'md': '768px',    // GRAY                                           
+      'lg': '1024px',   // YELLOW                
+      'xl': '1280px',   // GREEN    all of my monitors 
+      '2xl': '1440px',  // BLUE
+      '3xl': '1536px',  // INDIGO
+      '4xl': '1760px',  // VIOLET
      
     }
   },
