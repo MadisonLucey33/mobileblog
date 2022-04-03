@@ -141,7 +141,7 @@ const PostCard = ({ post }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8 sm:bg-red-600 md:bg-orange-500 lg:bg-yellow-300 xl:bg-green-500 2xl:bg-cyan-400 3xl:bg-indigo-600 4xl:bg-violet-800">
+    <div className="bg-pink-200 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8 sm:bg-red-600 md:bg-orange-500 lg:bg-yellow-300 xl:bg-green-500 2xl:bg-cyan-400 3xl:bg-indigo-600 4xl:bg-violet-800">
       
       {/* <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
         <Image
