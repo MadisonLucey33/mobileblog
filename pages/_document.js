@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
         </Head>
-        <body className="min-w-[50%] mx-auto  bsm:min-w-full sm:min-h-fit  sm:object-cover sm:object-bottom sm:w-max md:w-max 2xl:object-right 3xl:w-1/12  lg:overflow-y-scroll lg:container lg:mx-auto lg:px-0 lg:mb-0  lg:pb-5">
+        <body className=" min-w-[50%] object-left -mr-96 overflow-x-hidden  sm:min-w-full sm:min-h-fit  sm:object-cover sm:object-bottom sm:w-max md:w-max 2xl:object-right 3xl:w-1/12  lg:overflow-y-scroll lg:container lg:mx-auto lg:px-0 lg:mb-0  lg:pb-5">
           <Main />
           <NextScript />
         </body>
