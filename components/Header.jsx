@@ -101,12 +101,14 @@ const myStyle4 = {
                 <div>
                   
                     <Link href="/" >
-                    <h2 className="md:float-left mr-96">
-            <span className="cursor-pointer font-bold  text-white" style={{textShadow: "1px 1px #000000", fontSize: '2.5rem', lineHeight: '2.25rem', marginRight: '0.12rem;',}}>M</span><span className="cursor-pointer font-bold text-5xl text-white " style={{textShadow: "1px 1px #000000", fontSize: '2.1rem', lineHeight: '2.25rem', marginRight: '0.22rem;',}}>adison </span>
+                    <h2 className="md:float-left lg:mr-96">
+            <span className="cursor-pointer font-bold  text-white " style={{textShadow: "1px 1px #000000", fontSize: '2.5rem', lineHeight: '2.25rem', marginRight: '0.12rem;',}}>M</span><span className="cursor-pointer font-bold text-5xl text-white " style={{textShadow: "1px 1px #000000", fontSize: '2.1rem', lineHeight: '2.25rem', marginRight: '0.22rem;',}}>adison </span>
             <span className="cursor-pointer font-bold  text-white" style={{textShadow: "1px 1px #000000", fontSize: '2.5rem', lineHeight: '2.25rem', marginRight: '0.12rem;', }}>L</span><span className="cursor-pointer font-bold text-5xl text-white" style={{fontSize: '2.1rem', lineHeight: '2.25rem'}}>ucey's</span> 
-            <span className="cursor-pointer font-normal text-5xl text-white ml-2.5" style={{fontSize: '2.1rem', lineHeight: '2.25rem', marginLeft: '0.85rem;'}}>  Blog/Diary</span>
-            <div className="cursor-pointer font-bold text-md text-white mt-2 text-red-200 ">✨ More coming soon -- spoiler Las Vegas & the Mojave Desert! ✨
-            <span className="pl-8 text-sm antialiased italic "><br></br> (Q): Did you write about me in your diary? <br></br>(A): Maybe I did. Maybe I will. read it and find out...</span></div>
+            <span className="cursor-pointer font-normal text-5xl text-white ml-2.5 " style={{fontSize: '2.1rem', lineHeight: '2.25rem', marginLeft: '0.85rem;'}}> Blog/Diary</span>
+            <div className="cursor-pointer font-bold text-md text-white mt-2 text-red-200 md:mr-0 md:ml:0 lg:-mr-8 lg:ml-0 xl:mr-0 xl:ml-0">✨ More coming soon -- spoiler Las Vegas & the Mojave Desert! ✨
+            {/* <span className="pl-8 text-sm antialiased italic "><br></br> (Q): Did you write about me in your diary? <br></br>(A): Maybe I did. Maybe I will. read it and find out...</span> */}
+            
+            </div>
          
             </h2>
           
@@ -119,7 +121,7 @@ const myStyle4 = {
 
  <a href={`https://www.madisonlucey.com/`} target="_blank"> {/* style={{backgroundColor: '#b8129c'}}   style={{backgroundColor: '#c714a9'}}*/}
           {/* <span className="transition duration-500 ease transform hover:-translate-y-1  md:float-right ml-5 bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer mt-2" style={{backgroundColor: '#d61eb7'}} >Career Portfolio</span> */}
-          <button className="pushable md:float-right ml-5 lg:mt-8 xl:-mt-20 2xl:mt-12 2xl:ml-52">
+          <button className="pushable  ml-5 sm:ml-0  sm:mt-8  md:float-left md:mr-64 md:ml-0 md:mt-8 lg:float-right lg:-mt-20 lg:mr-0 xl:mr-0 xl:-mt-11 2xl:mr-0 2xl:mt-7 2xl:ml-52 ">
           <span className="front">
            Career Portfolio ✨
           </span>
@@ -133,14 +135,25 @@ const myStyle4 = {
         </a>
 
 
-        <div className=" flex 2xl:ml-56" style={{paddingLeft: '38.9rem'}}>
+        {/*  only visible for lg displays and up aka computers, desktops and probably laptops */}
+        <div className=" flex invisible sm:invisible md:invisible lg:visible 2xl:ml-56" style={{paddingLeft: '38.9rem'}}>
            
               { categories.map((category, index) => ( // was considering  textShadow: "0px 1px #000000",
-                <Link key={index} href={`/category/${category.slug}`} className="min-w-full"><span className="md:float-right  pr-5 mr-2 flex -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400" style={{ letterSpacing: "0.034rem", }}>{category.name}</span></Link>
+                <Link key={index} href={`/category/${category.slug}`} className="min-w-full "><span className="md:float-right  pr-5 mr-2 flex -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400  md:mr-0  md:-pl-32   lg:pl-0 lg:pr-5 lg:mr-2 lg:mt-0.5 xl:-mt-8 " style={{ letterSpacing: "0.034rem", }}>{category.name}</span></Link>
               ))}
-               <Link href="/" ><span className="md:float-right -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400  " style={{letterSpacing: "0.034rem"}}>Blog Home</span></Link>
+               <Link href="/" ><span className="md:float-right -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400 lg:inline-block lg:whitespace-nowrap lg:w-24  lg:mt-0.5 xl:-mt-8 xl:mr-0 xl:inline-block xl:whitespace-nowrap" style={{letterSpacing: "0.034rem"}}>Blog Home</span></Link>
 
         </div>
+
+         {/*  only visible for md displays and smaller i.e. tablets, phones and small laptops maybe */}
+        <div className=" flex visible sm:visible  sm:mt-5  md:visible md:mt-5 lg:mt-0 lg:invisible 2xl:ml-56 " style={{paddingLeft: '19.9rem'}}>
+           
+           { categories.map((category, index) => ( // was considering  textShadow: "0px 1px #000000",
+             <Link key={index} href={`/category/${category.slug}`} className="min-w-full "><span className="md:float-right  pr-5 mr-2 flex -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400  md:mr-0  md:-pl-32   lg:pl-0 lg:pr-5 lg:mr-2 lg:mt-0.5 xl:-mt-8 " style={{ letterSpacing: "0.034rem", }}>{category.name}</span></Link>
+           ))}
+            <Link href="/" ><span className="md:float-right -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400 sm:inline-block sm:whitespace-nowrap   lg:inline-block lg:whitespace-nowrap lg:w-24  lg:mt-0.5 xl:-mt-8 xl:mr-0 xl:inline-block xl:whitespace-nowrap" style={{letterSpacing: "0.034rem"}}>Blog Home</span></Link>
+
+     </div>
 
         </span>
 
