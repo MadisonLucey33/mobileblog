@@ -121,7 +121,7 @@ const myStyle4 = {
 
  <a href={`https://www.madisonlucey.com/`} target="_blank"> {/* style={{backgroundColor: '#b8129c'}}   style={{backgroundColor: '#c714a9'}}*/}
           {/* <span className="transition duration-500 ease transform hover:-translate-y-1  md:float-right ml-5 bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer mt-2" style={{backgroundColor: '#d61eb7'}} >Career Portfolio</span> */}
-          <button className="pushable  ml-5 sm:ml-0  sm:mt-8  md:float-left md:mr-64 md:ml-0 md:mt-8 lg:float-right lg:-mt-20 lg:mr-0 xl:mr-0 xl:-mt-11 2xl:mr-0 2xl:mt-7 2xl:ml-52 ">
+          <button className="pushable   mt-8  ml-5 sm:ml-0  sm:mt-8  md:float-left md:mr-64 md:ml-0 md:mt-8 lg:float-right lg:-mt-20 lg:mr-0 xl:mr-0 xl:-mt-11 2xl:mr-0 2xl:mt-7 2xl:ml-52 ">
           <span className="front">
            Career Portfolio ✨
           </span>
@@ -146,7 +146,7 @@ const myStyle4 = {
         </div>
 
          {/*  only visible for md displays and smaller i.e. tablets, phones and small laptops maybe */}
-        <div className=" flex visible sm:visible  sm:mt-5  md:visible md:mt-5 lg:mt-0 lg:invisible 2xl:ml-56 " style={{paddingLeft: '19.9rem'}}>
+        <div className=" flex visible mt-5 sm:visible  sm:mt-5  md:visible md:mt-5 lg:mt-0 lg:hidden 2xl:ml-56 " style={{paddingLeft: '19.9rem'}}>
            
            { categories.map((category, index) => ( // was considering  textShadow: "0px 1px #000000",
              <Link key={index} href={`/category/${category.slug}`} className="min-w-full "><span className="md:float-right  pr-5 mr-2 flex -mt-16 align-middle text-white  font-semibold cursor-pointer transition duration-500 hover:text-pink-400  md:mr-0  md:-pl-32   lg:pl-0 lg:pr-5 lg:mr-2 lg:mt-0.5 xl:-mt-8 " style={{ letterSpacing: "0.034rem", }}>{category.name}</span></Link>
