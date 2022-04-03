@@ -16,7 +16,7 @@ class MyDocument extends Document {
 
         {/* min-w-[50%] object-left -mr-96 overflow-x-hidden   */}
         <body className=" 
-        
+        min-w-[50%] object-left overflow-x-hidden
         
         mx-auto px-0 mb-0  pb-5 min-w-full
 
