@@ -26,7 +26,7 @@ module.exports = {
                         // PINK     phone
       'sm': '640px',    // RED                                   
       'md': '768px',    // GRAY                                           
-      'lg': '1024px',   // YELLOW                
+      'lg': '1024px',   // YELLOW   everything is good except nav bar and featured posts         
       'xl': '1280px',   // GREEN    all of my monitors 
       '2xl': '1440px',  // BLUE
       '3xl': '1536px',  // INDIGO
